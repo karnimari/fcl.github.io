@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+
+     <meta charset="UTF-8">
+
+     <meta 
+      name="description"
+      content="Envios y paquetería a latinoamerica desde Valencia."
+     >
+
+     <meta
+      name="keywords"
+      content="envios, valencia, envios valencia, envíos, latinoamerica, envios latinoamerica, ecuador, bolivia, perú, peru, colombia, venezuela, paraguay, paquetería, paqueteria, paqueteria valencia, paquetería valencia, envios a latinoamerica, Jose Luis Ferrer, Regina del Pilar Jaramillo, sistema 4x4, registro nucleo familiar, viajar, Marina Karniushina, Marina Karnyushina, Devina web, viaja, compra billetes, billetes, geomil"
+     >
+     <style type="text/css">
+
+ body {
+   width: 100%;
+      background: #d2e8f6;
+    overflow-x: hidden;
+    }
+
+#background1{
+left: 1%;
+position: absolute;
+width: 18%;
+margin: 0%;
+padding: 0%;
+top: -1%;
+}
+
+#ulnav {
+    list-style-type:none;
+    background-color: #374282;
+    margin: 0%;
+    padding-left: 0%;
+    padding-top: 1%;
+    padding-right: 0%;
+    padding-bottom: 2%;
+    position: relative;
+    left: 19.3%;
+    width: 81%;
+    top: -10px;
+	}
+
+  #ul1 {
+    list-style-type:none;
+    background-color: #385899;
+    margin: 0%;
+    padding: 0%;
+    padding-left: 0%;
+    padding-right: 2%;
+    width: 81%;
+    position: relative;
+    left: 19.3%;
+    right: 10px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    margin-top: -2%;
+   }
+
+    li a:link, li a:visited {
+    text-decoration:none;
+    color: white; 
+   
+}
+
+    #li1 {
+        display:inline;
+        text-align: center; 
+        font-size: 1.7em;
+        font-family: cooper black, Georgia, 'Times New Roman', Times, serif;
+        margin-left: 0%;
+        padding-right: 2%;
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-weight: bold;
+		color: white;
+        margin: 0pc;
+        width: 100%;
+    }
+
+#facebook{
+margin-bottom: -0.5%;
+
+}
+
+    #li0 {
+    	display: inline;
+        font-size: 150%;
+        font-family:  'Times New Roman', Times, serif;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-weight: bold;
+		color: white;
+    margin-left: 0%;
+    width: 45%;
+    }
+
+
+	#li2{
+	display: inline;
+        font-size: 135%;
+        font-family:  'Times New Roman', Times, serif;
+        padding-right: 2%;
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-weight: bold;
+		color: white;
+    margin-left: 0%;
+    width: 100%;
+    
+	}
+
+    #li1:hover{
+        background-color: #b32b2d;
+        
+    }
+	
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+
+
+	/* CONTACTENOS*/
+	/*Estilos para el encabezado*/
+
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: -10px;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1000px;
+		margin: auto;
+        z-index: 300;
+    
+		
+	}
+	.container .btn-menu, .logo{
+		float: right;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	
+    .btn-menu{
+        right: 0px;
+        width: 2.5%;
+        font-size: 1.7em;
+        word-wrap: break-word;
+        background: #385899ad;
+        margin: 0px;
+        padding: 0px;
+		cursor: pointer;
+        color: white;
+        font-family: cooper black, Arial, Helvetica, sans-serif;
+
+    }
+
+	.container .menu{
+		right: 0px;
+		line-height: 100px;
+		
+	}
+	
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-left: 5px;
+    
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+		position: fixed;
+        right: 0mm;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0; right: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+        overflow: hidden;
+		right: 0px;
+        z-index: 300;
+		
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 280px;
+		background: #374282;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(100%);
+		right: 0px;
+		position: fixed;
+    margin-top:-10px;    
+		
+	}
+
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 2%;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 0px;
+		top: 2%;
+		color: #fff;
+		font-size: 18px;
+	}
+    nav{
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 10px;
+    }
+
+    input{
+
+        margin: 5px;
+    }
+
+	#imgphone {
+		width: 35px;
+		height: 45px;
+		margin: 0px;
+		cursor: pointer;
+	}
+
+	img{
+		margin: auto;
+	}
+	
+	label{
+		cursor: pointer;
+	}
+	.btn-menu{
+		position: fixed;
+		right: 0px;
+		margin-top: 1%;
+   color: white;
+   border-bottom-left-radius: 7%;
+   border-bottom-right-radius:7%;
+	}
+
+    
+
+					/* SLIDER */
+	
+	
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.slide{
+position: relative;
+margin: 0 auto;
+}
+
+input[name="slider-select-element"] {
+    display: none;
+}
+
+#slider-arrows {
+    margin: -10% auto 0 auto;
+    width: 80%;
+}
+
+#slider-box {
+    -moz-animation: autoSlider 20s infinite linear;
+    -o-animation: autoSlider 20s infinite linear;
+    -webkit-animation: autoSlider 20s infinite linear;
+    animation: autoSlider 20s infinite linear;
+
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+    height: 100%;
+    width: 400%;
+}
+
+
+#slider-container {
+    height: 21%;
+   right: 80px;
+    overflow: hidden;
+    text-align: left;
+    width: 80%;
+	margin-bottom: 0px;
+    margin-top: -10px;
+    margin-right: 10px;   
+    padding: 1%;
+    float: right;
+	
+}
+
+
+.element-green,
+.element-red
+.element-purple {
+    min-height: 400px;
+    max-height: 100%;
+    width: 80%;
+   
+}
+
+.element-blue{
+    height: 340px;
+    width: 80%;
+   
+}
+
+#imgslide{
+	width: 100%;
+	height: 395px;
+    margin-top: 0px;
+    margin-left: 20px;
+    border-radius: 5%;
+    
+}
+
+.slider-element {
+    float: left;
+    width: 25%;
+	
+}
+
+@-moz-keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -200%;
+    }
+
+    80% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -200%;
+    }
+
+    80% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -200%;
+    }
+
+    80% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}  
+.menu{
+  text-align: center;
+  margin: 20px;
+  margin-top: -60px;
+  width: 95%;
+  
+  
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+  
+}
+
+.menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: #374282;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 100%;
+  top:420px;
+  position: relative;
+  
+}
+
+
+.slider ul{
+  list-style: georgian;
+}
+
+h3{
+    color: #374282;
+}
+
+/*MENU LATERAL*/
+
+#ulside {
+    position: relative;
+    list-style-type:none;
+    background-color: #385899;
+    width: 20%;
+    height: 10%;
+    padding: 10px;
+    border-radius: 5%;
+    margin-left: 0%;
+    left: -5px;
+    top: 0px;
+  
+   }
+
+    #liside a:link, a:visited {
+    text-decoration:none;
+    color: white; 
+   
+}
+
+    #liside {
+        display:inline-block;
+        font-size: 1.0em;
+        font-family:  Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-weight: 700;
+		color: white;
+        text-align: center;
+        position: relative;
+        padding-left: 15px;
+        padding: 10px;
+        border-bottom: #c7c7c7;
+        border-bottom-style: groove;
+    }
+
+    #liside:hover{
+        background-color: #b32b2d;
+    }
+
+    #li0{
+        display:inline-block;
+        font-size: 1.2em;
+        font-family:  Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-weight: 700;
+		color: white;
+        text-align: center;
+        position: relative;
+        padding-left: 15px;
+        padding: 10px;
+       
+    }
+        
+       /* AVION/BARCO */
+    h2{
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: -5px;
+    }
+
+    #avbarter{
+
+      width: 90%;
+      margin-left: 3%;
+      position: relative;
+      z-index: 0;
+    }
+
+    #avion{
+       
+        position: relative;
+        left: 100px;
+        top: 30px;  
+        cursor: pointer;
+        
+    }
+ 
+
+    /* #barco{
+        
+    } */
+
+    #terr{
+        z-index: 0;
+       
+    }
+    img{
+        left: 50px;
+        z-index: 0;
+    }
+  
+.contenedor {
+  position: relative;
+  height: 290px;
+  width: 22%;
+  margin: 30px;
+  float: left;
+  margin-left: 3%;
+  margin-right: 60px;
+  z-index: 100;
+  
+}
+
+.contenedor img {
+  position: absolute;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.contenedor img.top:hover {
+  opacity: 0;
+}
+
+/*NORMATIVA */
+ 
+#advert{
+    left: 50px;
+}
+
+#mensaje{
+    border-bottom: #b32b2d;
+    border-bottom-style: groove;
+}
+
+#band{
+    
+    margin: 2%;
+    margin-bottom: -10px;
+    border-radius: 5%;
+    width: 80%;
+    
+}
+
+#noband{
+  width: 97%;
+  height: 400px;
+}
+
+#ulfoot{
+    background-color: #385899;
+    width: 100%;
+}
+
+#banderas{
+    margin-left: 2%;
+    width: 90%;
+    
+}
+
+
+table{
+    border: 0px;
+    margin-left: 3%;
+}
+
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .9);
+  transition: opacity .25s ease;
+  z-index: 300;
+  width: 100%;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+  
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: auto;
+  overflow: auto;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 500px;
+  background-color: #374282 ;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  
+  .modal__inner {
+    width: 95%;
+    height: 75%;
+    box-sizing: border-box;
+  }
+}
+
+#botoon{
+    background:#385899 ;
+    border: 2px;
+    border-color: #ccc;
+    border-style: groove;
+    padding: 2%;
+    width: 45%;
+    top: 2%;
+    display: inline-block;
+}
+
+
+
+p {
+  max-width: 600px;
+  height: auto;
+  width: auto;
+  font-size: 1.3em;
+}
+
+#banderas, td{
+    border: none;
+    
+}
+
+
+#prohibido{
+    margin-left: 1%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    width: 90%;
+   
+}
+
+ th{
+
+    border: 2px solid ;
+    border-color: #b32b2d; 
+    height: 50px;
+    width: 20%;
+    font-size: 125%;
+    font-family: cooper black;
+    color: #385899;
+    border-radius: 5%;
+}
+
+tr{
+
+width: 20%;
+}
+
+#arts{
+    color: #385899;
+    font-family: cooper black;
+}
+
+#modal__inner1 {
+  transition: top .25s ease;
+  position: absolute;
+  top: -10%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  margin: auto;
+  overflow: none;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 500px;
+  padding-top: 40px;
+}
+
+
+
+.centered-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+}
+
+
+
+#band {
+  float: center;
+  display: block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  overflow: hidden;
+  transition: all 500ms ease;
+  margin-bottom: 40px;
+  z-index: 0;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+}
+
+#band::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  
+  transition: all 500ms ease;
+  z-index: -1;
+}
+
+
+#band:hover {
+  background-color: #374282;
+  box-shadow: 0 0 5px #374282, 0 0 10px #374282, 0 0 10px #385899;
+  
+}
+
+
+
+
+
+#catec{
+margin-top: -100px;
+color: white;
+z-index: 1000;
+right: 0px;
+margin-left: 65%;
+}
+
+
+/* FOOTER*/
+
+footer {
+  height:300px;
+  line-height:50px;
+  background:#374282;
+  color:white;
+  text-align:center;
+  left:0;
+  width:95%;
+ 
+}
+
+footer.bottom {
+  bottom:0;
+  }
+
+  #foot1{
+float: left;
+width: 30%;
+position:relative;
+list-style-type:none;
+
+  }
+
+  #foot2{
+float: right;
+width: 30%;
+position:relative;
+list-style-type:none;
+
+  }
+
+  li{
+    list-style-type:none;
+  }
+
+  #juntos{
+    position: relative;
+    border: #374282;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 10%;
+    left: 0%;
+    z-index: -100;
+  }
+
+
+</style>
+
+<script type="text/javascript">
+
+</script>
+
+        <title> Paqueteria y Envios FCL </title>
+
+    </HEAD>
+
+    <BODY>
+
+     <img src="logo con iata.png" id="background1"> </th>
+        
+
+		<!-- Barra de navegación -->
+        <ul id="ulnav">
+          
+            <li id="li1"><a href="#"> Home </a></li>
+            <li id="li1"><a href="NOTICIAS 2.html" target="_blank">Noticias </a></li>
+            <li id="li1"><a href="#servicios"> Servicios </a></li>
+            <li id="li1"> <a href="#normativa"> Advertencia </a></li>
+            <li id="li1"><a href="https://envios-latinoamerica-fcl.es/nosotros.html"target="_blank"> Nosotros </a></li>
+            <li id="li1"><a href="https://www.facebook.com/Paqueteria-y-Envios-FCL-Freight-Container-Load-721312731332749" target="_blank"> <img src="facebook.png" id="facebook"></a> </li>
+            <!-- <li id="li0"> Avenida de la Constitución, <BR>220 VALENCIA 
+              
+            </li> -->
+           
+        </ul>
+
+
+					<!-- HORARIOS -->
+
+		<ul  id="ul1">
+			<li id="li2"> NUESTROS HORARIOS:</li>
+			<br>
+			<li id="li2"> De Lunes a Viernes: 10:00 - 14:00 / 17:00 - 20:00 </li>
+			
+			<li id="li2"> Sábados: 10:30 - 14:00 </li> 
+            <br>
+            
+            <li id="li0">  <a href="tel: +34 963 38 96 09"> 📲 Llámanos: 963 38 96 09</a> </li>
+              <li id="li0">  <a href="https://api.whatsapp.com/send?phone=34620468805 "> <img src="yyy.png"> Whatsapp: 620 46 88 05 </a></li> <br>
+                <li id="li0">  <a href="https://api.whatsapp.com/send?phone=34601440167 "> <img src="yyy.png"> Whatsapp: 601 44 01 67 </a></li>
+                  <li id="li0">  <a href="mailto:lap-a@hotmail.com"> 📧 Correo electrónico: lap-a@hotmail.com</a>
+         </li>
+         
+		</ul>
+	
+							<!-- CONTACTENOS-->
+        
+        <div class="btn-menu">
+			<label for="btn-menu"><img  id="imgphone" src="phone.png"> CONTÁCTENOS</label>
+			
+		</div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+          
+            <div class="cont-menu">
+              
+                <nav>
+                    <h1> Debe rellenar el siguiente formulario </h1>
+                    <form action="karnimari1.php" method="post">
+            
+                    <div>
+                       <input type="text" name="username" id="username" placeholder="Nombre">
+                       <input type="text" name="lastname" id="lastname" placeholder="Apellido">
+                       <br>
+                       <br>
+                       <input type="radio" value="Enviar" name="actión"> Enviar
+                       <input type="radio" value="Recibir" name="action"> Recibir
+                       <br>
+                       <input type="radio" value="Otro asunto" name="action"> Otro asunto
+                       <br>
+                       <br>
+                      
+                    </div>
+                       <input type="tel" name="telephone" id="telephone" placeholder="Telefono móvil">
+                       <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                       <br>
+                       <br>
+
+                       <p><textarea type="text" name="comentario" rows="7" cols="30">  Deje aquí su duda y contactaremos con usted! 
+                         
+  Si es sobre su paquete indique su peso, tamaño, lugar de carga y su destino. </textarea></p>
+
+                       <input type="submit" value="Enviar">
+                       <input type="reset" value="Borrar todo">
+               
+                       </form>
+
+
+                       <ul>
+                        <?php if(isset($errores)){
+                            foreach ($errores as $error){
+                                echo "<li> $error </li>";
+                            }
+                        }
+                        ?>
+                        </ul>
+               
+                </nav>
+                <label class="modal__close" for="btn-menu"></label>
+            </div>
+
+
+      
+        </div>
+		                               <!-- IMG SLIDES -->
+		 <div id="page">
+			<section>
+											
+				<div id="slider-container">
+					<div id="slider-box">
+
+
+            
+						<div class="slider-element">
+							<article class="element-red" id="slide1">
+								<img id="imgslide" src="bienvenida.png"/>								
+							</article>
+						</div>
+						<div class="slider-element">
+							<article  id="slide2" class="element-green">
+								<img id="imgslide" src="viaja.png"/>							
+							</article>
+						</div>
+						<div class="slider-element">
+							<article class="element-blue" id="slide3">
+                                <a href="https://www.google.com/maps/place/ENVIOS+PAQUETERIA+A+ECUADOR,+COLOMBIA,+BOLIVIA,+VENEZUELA/@39.4947741,-0.3717546,15z/data=!4m5!3m4!1s0x0:0xbe24e47991457e47!8m2!3d39.4947674!4d-0.3717429" target="_blank">
+							<center>	<h3>ESTAMOS EN Avenida de la Constitución, 220, 46019 València, Valencia</h3> </center>
+                               <center> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1539.437391560243!2d-0.37226684592587506!3d39.49474197538776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60479ae393249d%3A0xbe24e47991457e47!2sENVIOS%20PAQUETERIA%20A%20ECUADOR%2C%20COLOMBIA%2C%20BOLIVIA%2C%20VENEZUELA!5e0!3m2!1ses!2ses!4v1628362043811!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> </center>
+								</a>				
+							</article>                            
+						</div>
+
+
+                        <div class="slider-element">
+							<article class="element-purple" id="slide4">
+							<a href="Noticias 2.html">	<img id="imgslide" src="promo noticias.png"/>	</a>							
+							</article>
+						</div>
+
+					</div>
+				</div>
+											
+			</section>            
+		</div>
+    
+
+    <!--
+		<ul class="menu">
+
+			<li>
+			  <a href="#slide1">1</a>
+			</li>
+
+			<li>
+			  <a href="#slide2">2</a>
+			</li>
+
+			 <li>
+			  <a href="#slide3">3</a>
+			</li>
+      
+      <li>
+        <a href="#slide4">4</a>
+      </li>
+
+	  </ul>
+  -->
+
+                         <!-- Nuestros servicios-->
+	 <div>
+    <ul id="ulside">
+        <h2>¡NUESTROS SERVICIOS!</h2>
+        <li id="liside"><label class="btn" for="modal-8"> Envíos de Paquetería </label> 
+        
+            <input class="modal-state" id="modal-8" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-8"></label>
+              <div class="modal__inner">
+                <label class="modal__close" for="modal-8"></label>
+                <h2> Envíos de paquetería (Importación y exportación) </h2>
+                <p> <br> Desde FCL ofrecemosenvíos aéreos, marítimos y terrestres (NACIONALES e INTERNACIONALES) <BR> Disponemos de una amplia red de oficinas repartidas por el mundo garantizando así un servicios personalizado, eficaz, rápido y seguro. </p>
+              </div>
+            </div>
+         </li>    
+        <li id="liside"><label class="btn" for="modal-7"> Envíos urgentes </label> 
+        
+            <input class="modal-state" id="modal-7" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-7"></label>
+              <div class="modal__inner">
+                <label class="modal__close" for="modal-7"></label>
+                <h2>ENVÍOS URGENTES</h2>
+                <p> <br> Si necesita enviar un paquete urgentemente en FCL nos ocupamos de hacerlo lo más rápido posible. </p>
+              </div>
+            </div>
+         </li>  
+        <li class="active" id="liside"><label class="btn" for="modal-6"> Envío de documentos </label> 
+        
+            <input class="modal-state" id="modal-6" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-6"></label>
+              <div class="modal__inner">
+                <label class="modal__close" for="modal-6"></label>
+                <h2>ENVÍO DE DOCUMENTOS</h2>
+                <p> <br> Nos ocuparemos de que sus documentos lleguen a su destino cuidadosamente. </p>
+              </div>
+            </div>
+         </li>  
+        <li class="active" id="liside"><label class="btn" for="modal-5"> Almacenaje  </label> 
+        
+            <input class="modal-state" id="modal-5" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-5"></label>
+              <div class="modal__inner">
+                <label class="modal__close" for="modal-5"></label>
+                <h2>ALMACENAJE</h2>
+                <p> <br> Disponemos de grandes almacenes donde puede guardar sus enseres, le garantizamos seguridad y protección. </p>
+              </div>
+            </div>
+         </li> 
+        <li class="active" id="liside"><label class="btn" for="modal-4"> Envío de dinero  </label> 
+        
+            <input class="modal-state" id="modal-4" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-4"></label>
+              <div class="modal__inner">
+                <label class="modal__close" for="modal-4"></label>
+                <h2>ENVÍO DE DINERO</h2>
+                <p> <br> Realizamos envíos de dinero, a cualquier parte del mundo. </p>
+              </div>
+            </div>
+         </li> 
+        <li class="active" id="liside"> <label class="btn" for="modal-3"> Servicios gratuitos  </label> 
+        
+            <input class="modal-state" id="modal-3" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-3"></label>
+              <div class="modal__inner">
+                <label class="modal__close" for="modal-3"></label>
+                <h2>OFRECEMOS SERVICIOS GRATUITOS</h2>
+                <p> <br> Para su mayor comodidad, le ofrecemos ayuda en el registro 4x4 y registro nucleo familiar. <br>Ven a la oficina y te asesoramos ¡GRATIS! <br> Y si prefieres hacerlo por tu cuenta pulsa el botón de abajo.
+                <br> <br> <span id="botoon"> <a href="que es 4x4.html" target="_blank">Hazlo tú mismo 4x4</a> </span>
+            &nbsp &nbsp &nbsp 
+            <span id="botoon"><a href="que es 4x4.html#registronf" target="_blank">Registro nucleo familiar </a> </span>
+            </p>
+              </div>
+            </div>
+         </li>
+
+
+
+        </li>
+        <li class="active" id="liside"><label class="btn" for="modal-2"> Compra de billetes de viaje </label> 
+        
+            <input class="modal-state" id="modal-2" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-2"></label>
+              <div class="modal__inner">
+                <label class="modal__close" for="modal-2"></label>
+                <h2>COMPRE SU BILLETE</h2>
+                <p> <br> ¡Viaje a donde quiera con los precios más bajos! <br> En FCL ofrecemos viajes a precios económicos.  </p>
+              </div>
+            </div>
+         </li>
+        <li class="active" id="liside"><label class="btn" for="modal-1">Recarga de móvil </label> 
+        
+            <input class="modal-state" id="modal-1" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-1"></label>
+              <div class="modal__inner">
+                <label class="modal__close" for="modal-1"></label>
+                <h2>¡RECARGAMOS TU MÓVIL!</h2>
+                <p> <br> Servicio en construcción. </p>
+              </div>
+            </div>
+        
+        </li>
+
+    </ul>
+
+  </div>
+  <br>
+  <br>  
+
+ <!-- DIBUJOS AVION Y BARCO -->
+
+ <div id="avbarter"></div>
+
+ <a name="servicios"/>
+<div class="contenedor">
+    <img src="no aer.png" height="200px" width="250px" />
+    <img class="top" src="env aer.png" height="200px" width="250px" />
+</div>
+
+  <div class="contenedor">
+    <img src="no bar.png" height="200px" width="250px" />
+    <img class="top" src="env barc.png" height="200px" width="250px" />
+    
+</div>
+
+<div class="contenedor">
+    <img src="no ter.png" height="200px" width="250px" />
+    <img class="top" src="env ter.png" height="200px" width="250px" id="terr" />
+    
+</div>
+
+</div>
+
+<br>
+<a name="normativa"/>
+<table >
+    <tr>
+        <td> <img src="adverti.png" id="advert" height="100px" width="120px"> </td>
+        <td> <img id="mensaje" src="antes.png"> </td>
+    </tr>
+</table>
+
+
+
+<table id="prohibido">
+
+    <h1 id="arts">⛔ ARTÍCULOS PROHIBIDOS PARA TRANSPORTE ⛔</h2>
+   
+    <tr>
+        <th> 🍾Bebidas alcohólicas </th>
+        <th> 🚬 Tabaco  </th>
+        <th> 🍎Artículos perecederos </th>
+        <th> 💎Joyas </th>
+
+    </tr>
+
+    <tr>
+        <th> 🐊Pieles y cueros de animales </th>
+        <th> 🦋 Plantas y animales (vivos o muertos) </th>
+        <th> 🔫 Armas y munición </th>
+        <th> 💥 Explosivos y gases comprimidos </th>
+    </tr>
+
+    <tr>
+        <th> 🏺 Restos funerarias </th>
+        <th> 💊 Estupefacientes y sust. psicotrópicas </td>
+        <th> 🔬 Muestras de laboratorio </td>
+        <th> ⛽ Solventes y corrosivos </td>
+    </tr>
+
+    <tr>
+        <th> 💸 Dinero/valores </th>
+        <th>  🚘 Placas de vehículos </th></th>
+        <th> ✍ Mercancía falsificada </th>
+        <th> 👙 Material pornográfico </th>
+    </tr>
+
+    <tr>
+        <th> 🔥 Cosas inflamables </th>
+        <th> <img src="radiation-sign-yellow-black-color-260nw-1704669115.jpg" height="25px" width="25px"> Cosas magnéticas o radioactivas </th>
+        <th> ⛓ Materiales oxidantes </th>
+        <th> 💀 Artículos tóxicos y sustancias infecciosas</th>
+    </tr>
+
+    
+
+<!--
+    <tr>
+        <th>  </th>
+        <th>  </th>
+        <th> </th>
+        <th>  </th>
+    </tr>
+-->
+</table>
+
+
+
+<h1 id="arts">☝ Y además la normativa de cada país exige que... ☝ </h1>
+
+<table id="banderas">
+
+    <tr>
+        <td> <label class="btn" for="modal-10"> <img id="band" src="ecua.png"> </a><p>Ecuador</p>  </label>
+            <input class="modal-state" id="modal-10" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-10"></label>
+              <div class="modal__inner" id="modal__inner1">
+                <label class="modal__close" for="modal-10"></label>
+                <img src="cond ecua.png" alt="" id="noband"/>
+                <p id="catec"> <b><a href="cartitas.html" target="blank"> Consulte CATEGORÍAS</a></b>
+                <br><b><a href="que es 4x4.html" target="blank"> Consulte el sistema 4x4</a></b>
+            </p>
+              </div>
+            </div>
+        
+        </td>
+        <td> <label class="btn" for="modal-11"> <img id="band" src="colomb.png"></a><p>Colombia</p>  </label>
+            <input class="modal-state" id="modal-11" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-11"></label>
+              <div class="modal__inner" id="modal__inner1">
+                <label class="modal__close" for="modal-11"></label>
+                <img src="cond colomb.png" alt="" id="noband"/>
+              </div>
+            </div>
+           </td>
+
+
+        <td> <label class="btn" for="modal-12"> <img id="band" src="venez.png"> </a> <p>Venezuela</p> </label>
+            <input class="modal-state" id="modal-12" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-12"></label>
+              <div class="modal__inner" id="modal__inner1">
+                <label class="modal__close" for="modal-12"></label>
+                <img src="cond venez.png" alt="" id="noband"/>
+              </div>
+            </div>
+           </td>
+           
+        <td> <label class="btn" for="modal-13"> <img id="band" src="hond.png"> <p>Honduras</p> </label>
+            <input class="modal-state" id="modal-13" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-13"></label>
+              <div class="modal__inner" id="modal__inner1">
+                <label class="modal__close" for="modal-13"></label>
+                <img src="cond hond.png" alt="" id="noband"/>
+              </div>
+            </div>
+           </td> 
+
+    </tr>
+
+    <tr>
+        <td> <label class="btn" for="modal-14"> <img id="band" src="Boliv.png">  </a> <p>Bolivia</p> </label>
+            <input class="modal-state" id="modal-14" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-14"></label>
+              <div class="modal__inner" id="modal__inner1">
+                <label class="modal__close" for="modal-14"></label>
+                <img src="cond boliv.png" alt="" id="noband"/>
+              </div>
+            </div>
+           </td>  
+
+
+
+        <td> <label class="btn" for="modal-15"> <img id="band" src="Per.png">  </a> <p>Perú</p> </label>
+            <input class="modal-state" id="modal-15" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-15"></label>
+              <div class="modal__inner" id="modal__inner1">
+                <label class="modal__close" for="modal-15"></label>
+                <img src="cond peru.png" alt="" id="noband"/>
+              </div>
+            </div>
+           </td>  
+
+        
+           <td> <label class="btn" for="modal-16"> <img id="band" src="paraguay.png"></a><p>Paraguay</p>  </label>
+            <input class="modal-state" id="modal-16" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-16"></label>
+              <div class="modal__inner" id="modal__inner1">
+                <label class="modal__close" for="modal-16"></label>
+                <img src="cond parag.png" alt="" id="noband"/>
+              </div>
+            </div>
+           </td>
+
+           <td> <label class="btn" for="modal-17"> <img id="band" src="otros países.png"></a><p>Otros países</p>  </label>
+            <input class="modal-state" id="modal-17" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-17"></label>
+              <div class="modal__inner" id="modal__inner1">
+                <label class="modal__close" for="modal-17"></label>
+                <img src="cond pais.png" alt="" id="noband"/>
+              </div>
+            </div>
+           </td>
+          
+    </tr>
+<div>
+
+
+</div>
+</table>
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a href="https://envios-latinoamerica-fcl.es/nosotros.html" target="_blank"> 
+  <div><img src="JUNTOS.png" id="juntos" height="60%" width="50%"> 
+  </div></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<footer>
+
+  <div id="foot1">
+  <ul>
+  
+<h2>ENLACES</h2>
+<li><a href="https://latinosfm.es/2019/07/22/fcl-envios/">¡ESTAMOS EN LATINOSFM!</a></li>
+<li><a href="https://www.facebook.com/Paqueteria-y-Envios-FCL-Freight-Container-Load-721312731332749" target="_blank"> NUESTRO FACEBOOK</a></li>
+<li><a href="https://www.grupogeomil.com" target="_blank"> GEOMIL</a></li>
+<li><a href="https://www.consuladovirtual.gob.ec/web/guest/inicio" target="_blank">CONSULADO ECUADOR</a></li>
+
+
+</ul>
+
+</div>
+
+<div id="foot1">
+
+ <ul>
+
+<h2> CONTACTO:</h2>
+<li>Whatsapp: 620 46 88 05 </li>
+<li>Telefono: 963 38 96 09 </li>
+<li>Email: lap-a@hotmil.com</li>
+<li><a href="https://www.facebook.com/Paqueteria-y-Envios-FCL-Freight-Container-Load-721312731332749">FACEBOOK </a> </li>
+
+</ul>
+
+</div>
+
+<div id="foot2">
+
+  <ul>
+ 
+ <h2> </h2>
+ <li> &nbsp </li>
+ <li> &nbsp </li>
+ <li>Esta página fue creada por:</li>
+ <li><a href="https://www.facebook.com/profile.php?id=100066147094513" target="_blank" ><img src="devina web.png" height="20%" width="60%" > </a></li>
+ 
+ </ul>
+ 
+ </div>
+
+
+</footer>
+
+
+  
+		
+    </BODY>
+
+</HTML>
