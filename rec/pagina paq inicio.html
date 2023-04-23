@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+
+     <meta charset="UTF-8">
+   
+     <style type="text/css">
+
+ body {
+        background: #d2e8f6;
+		background-image: url(logosfp12.png);
+		background-repeat: no-repeat;
+    }
+
+    #ulnav {
+    
+    float: right;
+    list-style-type:none;
+    background-color: #374282;
+    margin: 0px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+	}
+
+  #ul1 {
+    float: left;
+    list-style-type:none;
+    background-color: #385899;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+	margin-left: 280px;
+   }
+
+    li a:link, a:visited {
+    text-decoration:none;
+    color: white; 
+   
+}
+
+    #li1 {
+        display:inline;
+        text-align: center; 
+        font-size: 1.7em;
+        font-family: cooper black, Georgia, 'Times New Roman', Times, serif;
+        width: 0px;
+        padding-right: 40px;
+        padding-left: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+		color: white;
+        
+    }
+
+	#li2{
+
+	display:inline;
+        text-align: center; 
+        font-size: 1.5em;
+        font-family:  'Times New Roman', Times, serif;
+        width: 0px;
+        padding-right: 40px;
+        padding-left: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+		color: white;
+	}
+
+    #li1:hover{
+        background-color: #b32b2d;
+        
+    }
+	
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+
+
+	/* CONTACTENOS*/
+	/*Estilos para el encabezado*/
+
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1000px;
+		margin: auto;
+		
+	}
+	.container .btn-menu, .logo{
+		float: right;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	
+    .btn-menu{
+        right: 0px;
+        width: 35px;
+        font-size: 1.7em;
+        word-wrap: break-word;
+        background: #385899ad;
+        margin: 0px;
+        padding: 0px;
+		cursor: pointer;
+        color: white;
+        font-family: cooper black, Arial, Helvetica, sans-serif;
+
+    }
+
+	.container .menu{
+		right: 0px;
+		line-height: 100px;
+		
+	}
+	
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-left: 5px;
+        
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+		position: fixed;
+        right: 0mm;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0; right: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+        overflow: hidden;
+		right: 0px;
+		
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #374282;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(100%);
+		right: 0px;
+		position: fixed
+		
+	}
+
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 0px;
+		top: 10px;
+		color: #fff;
+		font-size: 18px;
+	}
+    nav{
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 10px;
+    }
+
+    input{
+
+        margin: 5px;
+    }
+
+	#imgphone {
+		width: 35px;
+		height: 45px;
+		margin: 0px;
+		cursor: pointer;
+	}
+
+	img{
+		margin: auto;
+	}
+	
+	label{
+		cursor: pointer;
+	}
+	.btn-menu{
+		position: fixed;
+		right: 0px;
+		margin-top: 50px;
+	}
+
+					/* SLIDER */
+	
+	* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+input[name="slider-select-element"] {
+    display: none;
+}
+
+#slider-arrows {
+    margin: -10% auto 0 auto;
+    width: 80%;
+}
+
+#slider-box {
+    -moz-animation: autoSlider 15s infinite linear;
+    -o-animation: autoSlider 15s infinite linear;
+    -webkit-animation: autoSlider 15s infinite linear;
+    animation: autoSlider 15s infinite linear;
+
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+    height: 100%;
+    width: 300%;
+}
+
+
+#slider-container {
+    height: 20%;
+  margin-left: 250px;
+    overflow: hidden;
+    text-align: left;
+    width: 80%;
+	margin-bottom: 0px;
+	
+}
+
+.element-blue,
+.element-green,
+.element-red {
+    min-height: 400px;
+    max-height: 100%;
+    width: 100%;
+}
+
+img{
+	width: 1000px;
+	height: 300px;
+}
+
+.slider-element {
+    float: left;
+    width: 33.333%;
+	
+}
+
+@-moz-keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}  
+.menu{
+  text-align: center;
+  margin: 20px;
+  margin-top: -150px;
+  
+  
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+  
+}
+
+.menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: blue;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 100%;
+  top:0;
+  
+}
+
+
+.slider ul{
+  list-style: georgian;
+}
+   
+
+ 
+</style>
+
+        <title> Paqueteria y Envios FCL </title>
+
+    </HEAD>
+
+    <BODY>
+    <!-- img id="img1" src="logosfp12.png"/> -->
+	<header>
+
+		<!-- Barra de navegación -->
+        <ul id="ulnav">
+          
+            <li id="li1"><a href="https://github.com/joanby/HTML5-Projects/blob/master/Tema%206/03-layout2.html"> Home </a></li>
+            <li id="li1"><a href="https://listenonrepeat.com/?v=EgBJmlPo8Xw&s=12&e=276#Billie_Eilish_-_everything_i_wanted"> Noticias </a></li>
+            <li id="li1"><a href="https://www.youtube.com/watch?v=FUABB_y3fJ4&list=PLwhTgLUc4mE9p3WY2iYJZEFzr05dsSJOH&index=5"> Servicios </a></li>
+            <li id="li1"><a href="https://github.com/joanby/HTML5-Projects/blob/master/Tema%206/03-layout2.html"> Presupuesto </a></li>
+           <li id="li1"></li>
+           <li id="li1"></li>
+        </ul>
+
+
+					<!-- HORARIOS -->
+
+		<ul  id="ul1">
+			<li id="li2"> NUESTROS HORARIOS:</li>
+			<br>
+			<li id="li2"> De Lunes a Viernes: 10:00 - 14:00 / 17:00 - 20:00 </li>
+			
+			<li id="li2"> Sábados: 10:30 - 14:00 </li>
+
+		</ul>
+	
+	</header>
+
+							<!-- CONTACTENOS-->
+        
+        <div class="btn-menu">
+			<label for="btn-menu"><img  id="imgphone" src="phone.png"> CONTÁCTENOS</label>
+			
+		</div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <h1> Debe rellenar el siguiente formulario </h1>
+                    <form action="#" method="post">
+            
+                    <div>
+                       <input type="text" name="username" id="username" placeholder="NOMBREE">
+                       <input type="text" name="lastname" id="lastname" placeholder="APELLIDO">
+                       <br>
+                       <br>
+                       <input type="radio" value="Enviar" name="actión"> Enviar
+                       <input type="radio" value="Recibir" name="action"> Recibir
+                       <br>
+                       <input type="radio" value="Otro asunto" name="action"> Otro asunto
+                       <br>
+                       <br>
+                      
+                    </div>
+                       <input type="tel" name="telephone" id="telephone" placeholder="telefono móvil">
+                       <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                       <br>
+                       <br>
+
+                       <input type="submit" value="enviarle">
+                       <input type="reset" value="Borrar todo">
+               
+                       </form>
+               
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+
+		                               <!-- IMG SLIDES -->
+		 <div id="page">
+			<section>
+											
+				<div id="slider-container">
+					<div id="slider-box">
+						<div class="slider-element">
+							<article class="element-red" id="slide1">
+								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/sunset.jpg"/>								
+							</article>
+						</div>
+						<div class="slider-element">
+							<article  id="slide2" class="element-green">
+								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/car.jpg"/>							
+							</article>
+						</div>
+						<div class="slider-element">
+							<article class="element-blue" id="slide3">
+								<p>Esto es un párrafo de ejemplo para comprobar que podemos meter cualquier tipo de elementos en el slider</p>
+					<a href="https://kikopalomares.com/">¡Corre a mi web para más contenido!</a>							
+							</article>                            
+						</div>
+					</div>
+				</div>
+											
+			</section>            
+		</div>
+
+		<ul class="menu">
+			<li>
+			  <a href="#slide1">1</a>
+			</li>
+			<li>
+			  <a href="#slide2">2</a>
+			</li>
+			 <li>
+			  <a href="#slide3">3</a>
+			</li>
+	  </ul>
+	  
+							
+        
+    </BODY>
+
+</HTML>
+

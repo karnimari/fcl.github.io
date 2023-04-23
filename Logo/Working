@@ -1,0 +1,46 @@
+
+    <BODY>
+        <div class="btn-menu">
+			<label for="btn-menu"><img src="phone.png"> CONTÁCTENOS</label>
+			
+		</div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <h1> Debe rellenar el siguiente formulario </h1>
+                    <form action="#" method="post">
+            
+                    <div>
+                       <input type="text" name="username" id="username" placeholder="NOMBREE">
+                       <input type="text" name="lastname" id="lastname" placeholder="APELLIDO">
+                       <br>
+                       <br>
+                       <input type="radio" value="Masculino" name="gender"> MACHO
+                       <input type="radio" value="Femenino" name="gender"> HEMBRA
+                       <br>
+                       <br>
+                       FECHA DE CUMPLEAÑOS 
+                       <BR>
+                        <input type="date" name="date" placeholder="FECHA DE CUMPLEAÑOS">
+                       <br>
+                       <br>
+                    </div>
+                       <input type="tel" name="telephone" id="telephone" placeholder="telefono móvil">
+                       <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                       <br>
+                       <br>
+
+                       <input type="submit" value="enviarle">
+                       <input type="reset" value="Borrar todo">
+               
+                       </form>
+               
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+
+    </BODY>
+
+</HTML>

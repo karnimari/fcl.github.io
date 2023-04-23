@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+
+     <meta charset="UTF-8">
+   
+     <style type="text/css">
+
+     body {
+        background: #d2e8f6;
+
+    }
+
+    #img1 {
+ 
+  padding: 0px;
+  margin: 0cm;
+  width: 200px;
+  height: 100px;
+
+}
+
+
+    ul {
+    
+    float: right;
+    list-style-type:none;
+    background-color: #374282;
+    margin: 0px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+}
+
+    li a:link, a:visited {
+    text-decoration:none;
+    color: white; 
+   
+}
+
+    li {
+        display:inline;
+        text-align: center; 
+        font-size: 1.7em;
+        font-family: cooper black, Georgia, 'Times New Roman', Times, serif;
+        width: 0px;
+        padding-right: 40px;
+        padding-left: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        
+    }
+
+    li:hover{
+        background-color: #b32b2d;
+        
+    }
+
+	
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1000px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: right;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	
+
+    .btn-menu{
+        float: right;
+        width: 35px;
+        font-size: 1.8em;
+        word-wrap: break-word;
+        background: #374282b4;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 100px ;
+        color: white;
+        font-family: cooper black, Arial, Helvetica, sans-serif;
+    }
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-left: 5px;
+        
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0; right: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+        overflow: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #374282;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(100%);
+		float: right;
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 0px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+    nav{
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 10px;
+    }
+
+    input{
+
+        margin: 5px;
+    }
+
+	img{
+		width: 35px;
+		height: 45px;
+	}
+
+</style>
+
+        <title> Paqueteria y Envios FCL </title>
+
+    </HEAD>
+
+    <BODY>
+        <img id="img1" src="logosfp12.png"/>
+        <ul>
+          
+            <li><a href="https://github.com/joanby/HTML5-Projects/blob/master/Tema%206/03-layout2.html"> Home </a></li>
+            <li><a href="https://listenonrepeat.com/?v=EgBJmlPo8Xw&s=12&e=276#Billie_Eilish_-_everything_i_wanted"> Noticias </a></li>
+            <li><a href="https://www.youtube.com/watch?v=FUABB_y3fJ4&list=PLwhTgLUc4mE9p3WY2iYJZEFzr05dsSJOH&index=5"> Servicios </a></li>
+            <li><a href="https://github.com/joanby/HTML5-Projects/blob/master/Tema%206/03-layout2.html"> Presupuesto </a></li>
+           <li></li>
+           <li></li>
+        </ul>
+
+        
+    <BODY>
+        <div class="btn-menu">
+			<label for="btn-menu"><img src="phone.png"> CONTÁCTENOS</label>
+			
+		</div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <h1> Debe rellenar el siguiente formulario </h1>
+                    <form action="#" method="post">
+            
+                    <div>
+                       <input type="text" name="username" id="username" placeholder="NOMBREE">
+                       <input type="text" name="lastname" id="lastname" placeholder="APELLIDO">
+                       <br>
+                       <br>
+                       <input type="radio" value="Enviar" name="actión"> Enviar
+                       <input type="radio" value="Recibir" name="action"> Recibir
+                       <br>
+                       <input type="radio" value="Otro asunto" name="action"> Otro asunto
+                       <br>
+                       <br>
+                      
+                    </div>
+                       <input type="tel" name="telephone" id="telephone" placeholder="telefono móvil">
+                       <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                       <br>
+                       <br>
+
+                       <input type="submit" value="enviarle">
+                       <input type="reset" value="Borrar todo">
+               
+                       </form>
+               
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+
+    </BODY>
+
+</HTML>
+
+        
+    </BODY>
+
+</HTML>
+
